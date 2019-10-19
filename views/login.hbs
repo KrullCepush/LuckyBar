@@ -1,0 +1,22 @@
+<div class="wrap-login">
+    <form id="form-login" class="form-login" action="/users/login" method="POST">
+        <input type="text" name="username" placeholder="username">
+        <input type="text" name="password" placeholder="password">
+        <button type="submit"> Login </button>
+    </form>
+    <div class="wrap-or">
+        <hr class="or">
+        <p class="or__desc"> OR </p>
+        <hr class="or">
+    </div>
+    <a href="/users/registration" class="or-link">
+        <button class="or__btn">Registration</button>
+    </a>
+    {{#if err}}
+    <div class="wrap-or">
+        <hr class="or">
+        <p class="or__desc"> Имя Занято </p>
+        <hr class="or">
+    </div>
+    {{/if}}
+</div>

@@ -1,0 +1,204 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.display {
+  margin-left: 2%;
+  padding-left: 20px;
+}
+
+.asidebtn {
+  position: fixed;
+  height: 100%;
+  width: 2%;
+  background-color: rgb(238, 107, 13);
+}
+
+.asidebtn__arrow {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  background-color: rgba(252, 89, 40, 0);
+  margin-top: 400px;
+  margin-left: 5px;
+}
+
+.aside {
+  width: 12%;
+  background-color: rgb(238, 107, 13);
+  position: fixed;
+  height: 100%;
+}
+
+.aside-bar {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.aside-bar-btn {
+  text-decoration: none;
+}
+
+.aside-bar-btn-link {
+  margin-bottom: 50px;
+}
+
+.aside-bar-btn-link__img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.aside-bar-btn-link__img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.aside-bar-btn-link__desc {
+  color: black;
+  font-weight: 800;
+  font-size: 24px;
+  text-align: center;
+}
+
+.aside-bar-btn_bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 15%;
+}
+
+.aside-bar-btn__close {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid black;
+}
+
+.wrap-bg {
+  min-height: 100vh;
+  background: url("https://www.langweiledich.net/wp-content/uploads/2015/09/kirokaze_01.gif")
+    no-repeat;
+  background-size: cover;
+}
+
+.none {
+  display: none;
+}
+
+.index-auth {
+  font-size: 60px;
+  font-family: "Fredoka One", cursive;
+  color: rgb(238, 107, 13);
+}
+
+.wrap-login {
+  padding: 1px;
+}
+
+.form-login {
+  margin-top: 30vh;
+}
+
+.form-login input {
+  display: block;
+  padding: 15px;
+  width: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  border: 5px solid rgb(238, 107, 13);
+  background-color: rgba(29, 231, 63, 0.5);
+  font-family: "Fredoka One", cursive;
+  font-size: 22px;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(238, 107, 13, 0.8);
+}
+::-moz-placeholder {
+  color: rgba(238, 107, 13, 0.8);
+} /* Firefox 19+ */
+:-moz-placeholder {
+  color: rgba(238, 107, 13, 0.8);
+} /* Firefox 18- */
+:-ms-input-placeholder {
+  color: rgba(238, 107, 13, 0.8);
+}
+
+.form-login button {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  padding: 15px;
+  font-family: "Fredoka One", cursive;
+  font-size: 22px;
+  border-radius: 25px;
+  background-color: rgba(29, 231, 63, 0.6);
+  box-shadow: none;
+  outline: none;
+  border: 5px solid rgb(238, 107, 13);
+  color: rgb(238, 107, 13);
+  cursor: pointer;
+}
+
+.wrap-or {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.or {
+  display: block;
+  width: 40%;
+  border: 1px solid rgba(29, 231, 63, 0.6);
+  border-radius: 50px;
+  background-color: rgba(29, 231, 63, 0.6);
+  height: 1px;
+}
+
+.or__desc {
+  font-size: 22px;
+  font-weight: 800;
+  color: rgb(238, 107, 13);
+  margin: 0;
+}
+
+.or-link {
+  text-decoration: none;
+}
+
+.or__btn {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  padding: 15px;
+  font-family: "Fredoka One", cursive;
+  font-size: 22px;
+  border-radius: 25px;
+  background-color: rgba(29, 231, 63, 0.6);
+  box-shadow: none;
+  outline: none;
+  border: 5px solid rgb(238, 107, 13);
+  color: rgb(238, 107, 13);
+  cursor: pointer;
+}
+
+.or__err {
+  font-family: "Fredoka One", cursive;
+  font-weight: 800;
+  display: block;
+  margin: 30px auto;
+  font-size: 22px;
+  color: rgb(238, 107, 13);
+}

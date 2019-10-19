@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap-bg">
+    <div class="asidebtn" id="asidebtn">
+      <div class="asidebtn__arrow">
+        >
+      </div>
+    </div>
+    <section class="display">
+
+      <div class="aside none" id="aside">
+        <nav class="aside-bar">
+
+          <a href="/" class="aside-bar-btn aside-bar-btn_home">
+            <div class="aside-bar-btn-link">
+              <div class="aside-bar-btn-link__img">
+                <img src="/images/header/home.png" alt="home">
+              </div>
+              <div class="aside-bar-btn-link__desc">
+                Home
+              </div>
+            </div>
+          </a>
+          {{#if user}}
+          <a href="/users/profile" class="aside-bar-btn aside-bar-btn_login">
+            <div class="aside-bar-btn-link">
+              <div class="aside-bar-btn-link__img">
+                <img src="/images/header/auth/profile.png" alt="login">
+              </div>
+              <div class="aside-bar-btn-link__desc">
+                profile
+              </div>
+            </div>
+          </a>
+          <a href="/chat" class="aside-bar-btn aside-bar-btn_login">
+            <div class="aside-bar-btn-link">
+              <div class="aside-bar-btn-link__img">
+                <img src="/images/header/auth/chat.png" alt="login">
+              </div>
+              <div class="aside-bar-btn-link__desc">
+                chat
+              </div>
+            </div>
+          </a>
+          <a href="/users/friends" class="aside-bar-btn aside-bar-btn_login">
+            <div class="aside-bar-btn-link">
+              <div class="aside-bar-btn-link__img">
+                <img src="/images/header/auth/friends.png" alt="login">
+              </div>
+              <div class="aside-bar-btn-link__desc">
+                friens
+              </div>
+            </div>
+          </a>
+          <a href="/users/logout" class="aside-bar-btn aside-bar-btn_login">
+            <div class="aside-bar-btn-link">
+              <div class="aside-bar-btn-link__img">
+                <img src="/images/header/auth/logout.png" alt="login">
+              </div>
+              <div class="aside-bar-btn-link__desc">
+                logout
+              </div>
+            </div>
+          </a>
+          {{else}}
+          <a href="/users/login" class="aside-bar-btn aside-bar-btn_login">
+            <div class="aside-bar-btn-link">
+              <div class="aside-bar-btn-link__img">
+                <img src="/images/header/noauth/auth.png" alt="login">
+              </div>
+              <div class="aside-bar-btn-link__desc">
+                Login
+              </div>
+            </div>
+          </a>
+          <a href="/users/registration" class="aside-bar-btn aside-bar-btn_registration">
+            <div class="aside-bar-btn-link">
+              <div class="aside-bar-btn-link__img">
+                <img src="/images/header/noauth/reg.png" alt="reg">
+              </div>
+              <div class="aside-bar-btn-link__desc">
+                Registration
+              </div>
+            </div>
+          </a>
+          {{/if}}
+          <div class="aside-bar-btn aside-bar-btn_bottom">
+            <button id="btn-close" class="aside-bar-btn__close"> Close </button>
+          </div>
+        </nav>
+      </div>
+
+      {{{body}}}
+    </section>
+  </div>
+
+
+  <script src="/javascripts/main.js"></script>
+</body>
+
+</html>
